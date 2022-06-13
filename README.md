@@ -1,1 +1,13 @@
-<h1> This website is a dice game that is played between two players. The numbers are chosen at random </h1>
+<h1> The Dice Game</h1>
+<ul>
+This web page consist of the following settings:
+<li>
+Each game is played between two players.
+</li>
+<li>
+The winner is chosen at random
+</li>
+<li>
+Clicking the "Click me to start a new game" button or simply refreshing the page will refresh the page and start a new game
+</li>
+</ul>
