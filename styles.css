@@ -1,13 +1,12 @@
 /* The title section  */
 body {
-  background-color: #85C1E9;
 }
 
 
 
 /* The Top Section  */
 #top_section {
-  background-color:white;
+  background-color:#C0C0C0			;
 
 }
 
@@ -15,7 +14,47 @@ body {
   margin-top: 1rem;
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
   text-align: center;
   display: block;
+}
+
+
+
+/* The Player's section */
+#players_section {
+  background-color:#D3D3D3		;
+
+
+}
+
+
+.players {
+  margin-top: 1rem;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 3rem;
+  text-align: center;
+
+
+}
+
+
+/* The footer Section */
+#footer_section {
+  background-color:#C0C0C0		;
+
+
+}
+
+
+.footer {
+  margin-top: 3rem;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 1rem;
+  text-align: center;
+
+
+
 }
