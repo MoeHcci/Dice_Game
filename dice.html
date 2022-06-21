@@ -20,7 +20,41 @@
     <!-- Dice placement section  -->
     <section id="players_section">
       <p class = "players" >  <span> Player 1 </span> Player 2 </p>
+
+      <img id="myImage" src="inverted-dice-6.png" style="width:100px">
+
+<!-- The javascript for the first image. The image element can be manipulated by modifying its .src
+1. we set set the new variable which is equal to a different number each time (e.g., randomNumber1)
+2. an if statement is created which changes the images everytime randomNumber1 changes by manipulating the .scr attribute
+Note: The <img> tag has two required attributes: src - Specifies the path to the image. alt - Specifies an alternate text for the image, if the image for some reason cannot be displayed. -->
+
+<script type="text/javascript">
+  var randomNumber1 = Math.floor(Math.random() * (6-0) + 1);
+
+  if (randomNumber1===6)
+  {document.getElementById('myImage').src = "inverted-dice-6.png"}
+  else if (randomNumber1===5)
+  {document.getElementById('myImage').src  = "inverted-dice-5.png"}
+  else if (randomNumber1===4)
+  {document.getElementById('myImage').src  = "inverted-dice-4.png"}
+  else if (randomNumber1===3)
+  {document.getElementById('myImage').src  = "inverted-dice-3.png"}
+  else if (randomNumber1===2)
+  {document.getElementById('myImage').src = "inverted-dice-2.png"}
+  else if (randomNumber1===1)
+  {document.getElementById('myImage').src  = "inverted-dice-1.png"}
+
+
+</script>
+
+
+
+
+
+
+
     </section>
+
 
     <!-- footer section  -->
     <section id="footer_section">
