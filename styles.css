@@ -1,13 +1,9 @@
 /* The title section  */
-body {
-}
-
-
+body {}
 
 /* The Top Section  */
 #top_section {
-  background-color:#C0C0C0			;
-
+  background-color: #C0C0C0;
 }
 
 .buttonmargins {
@@ -19,15 +15,10 @@ body {
   display: block;
 }
 
-
-
 /* The Player's section */
 #players_section {
-  background-color:#D3D3D3		;
-
-
+  background-color: #D3D3D3;
 }
-
 
 .players {
   margin-top: 1rem;
@@ -35,18 +26,25 @@ body {
   margin-left: auto;
   margin-bottom: 3rem;
   text-align: center;
-
-
 }
 
+/* The Player's section */
+#dice_section {
+  background-color: black;
+  ;
+}
+
+.image {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+
+}
 
 /* The footer Section */
 #footer_section {
-  background-color:#C0C0C0		;
-
-
+  background-color: #C0C0C0;
 }
-
 
 .footer {
   margin-top: 3rem;
@@ -54,7 +52,4 @@ body {
   margin-left: auto;
   margin-bottom: 1rem;
   text-align: center;
-
-
-
 }
