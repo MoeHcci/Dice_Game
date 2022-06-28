@@ -1,9 +1,16 @@
 /* The title section  */
-body {}
+body {
+  background-color: #D3D3D3;
+}
 
-/* The Top Section  */
-#top_section {
+/* The First Section  */
+#winner_section {
+  text-align: center;
+}
+
+#second_section {
   background-color: #C0C0C0;
+  text-align: center;
 }
 
 .buttonmargins {
@@ -17,7 +24,7 @@ body {}
 
 /* The Player's section */
 #players_section {
-  background-color: #D3D3D3;
+  /* background-color: #D3D3D3; */
 }
 
 .players {
@@ -38,12 +45,11 @@ body {}
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-
 }
 
 /* The footer Section */
 #footer_section {
-  background-color: #C0C0C0;
+  /* background-color: #C0C0C0; */
 }
 
 .footer {
