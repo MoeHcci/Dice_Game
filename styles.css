@@ -6,13 +6,25 @@ body {
 /* The First Section  */
 #winner_section {
   text-align: center;
+  font-size: 8rem;
+
 }
 
 #second_section {
-  background-color: #C0C0C0;
   text-align: center;
-}
 
+}
+#refresh {
+  color: red;
+  font-size: 2rem;
+  border: 0.2rem solid black;
+
+
+
+
+
+
+}
 .buttonmargins {
   margin-top: 1rem;
   margin-right: auto;
@@ -23,9 +35,6 @@ body {
 }
 
 /* The Player's section */
-#players_section {
-  /* background-color: #D3D3D3; */
-}
 
 .players {
   margin-top: 1rem;
@@ -37,8 +46,26 @@ body {
 
 /* The Player's section */
 #dice_section {
-  background-color: black;
+  background-color: black
   ;
+}
+
+.Dice_player_parent {
+text-align: center;
+}
+
+.Dice_player_child {
+  display: inline-block;
+}
+
+.players {
+  margin-top: 0.5rem;
+  margin-bottom:0rem;
+  color: white;
+  font-size: 5rem;
+
+
+  text-align: center;
 }
 
 .image {

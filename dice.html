@@ -25,26 +25,32 @@
 https://www.w3schools.com/jsref/met_loc_reload.asp
 2. I could have written just written the following js window.location.reload(); instead of refresh()-->
   <div id="second_section">
-    <button type="button" id ="refresh" class="btn btn-lg buttonmargins" onClick="refresh()">
-      Click Here or Refresh The page to Restart The Game</button>
+    <button type="button" id="refresh" class="btn btn-lg buttonmargins" onClick="refresh()">
+      Click Here Restart The Game</button>
   </div>
 
-  <!-- Dice placement section 1 -->
-  <section id="players_section">
-    <p class="players"> <span> Player 1 </span> Player 2 </p>
-
-  </section>
-
-  <!-- Dice placement section 2  -->
+  <!-- Dice placement section  -->
 
 
 
   <section id="dice_section">
-    <div class="image">
-      <img id="myImage_1" src="inverted-dice-6.png">
-      <img id="myImage_2" src="inverted-dice-6.png">
-    </div>
 
+
+    <div class="Dice_player_parent">
+      <div class="Dice_player_child">
+        <p class="players">
+          Player 1
+        </p>
+        <img id="myImage_1" src="inverted-dice-6.png">
+      </div>
+
+      <div class="Dice_player_child">
+        <p class="players">
+          Player 2
+        </p>
+        <img id="myImage_2" src="inverted-dice-6.png">
+      </div>
+    </div>
 
     <!-- The javascript Section. Must be placed in an order of operation. Image 1 js, Image 2 js, and the first section's js
 1. The image element can be manipulated by modifying its .src
@@ -103,9 +109,9 @@ Note: The <img> tag has two required attributes: src - Specifies the path to the
 
     <script type="text/javascript">
       function refresh() {
-      window.location.reload();
+        window.location.reload();
       }
-      </script>
+    </script>
 
   </section>
 
