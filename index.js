@@ -1,4 +1,4 @@
-// <!-- The javascript Section. Must be created in an "order of operation." First comes the image 1 code, then image 2, then the winner annoucment 
+// <!-- The javascript Section. Must be created in an "order of operation." First comes the image 1 code, then image 2, then the winner annoucment
 // 1. The image element can be manipulated by modifying its .src
 // 2. we set set the new variable which is equal to a different number each time (e.g., randomNumber1)
 // 3. an if statement is created which changes the images everytime randomNumber1 changes by manipulating the .scr attribute
@@ -39,12 +39,17 @@ if (randomNumber2 === 6) {
 
 var winner = document.getElementById("winner_section");
 
+//
+// To add an emoji you can paste the emoji directly or use the String.fromCodePoint method. This method takes a codepoint value as its argument
+// If the code point in HTML and CSS is U+ then for JS you replace it with U+
+
+
 if (randomNumber1 > randomNumber2) {
-  winner.textContent = "Player 1 Wins"
+  winner.textContent = "Player 1 Wins!" +String.fromCodePoint( 0x1F3C6) +String.fromCodePoint( 0x26F7)
 } else if (randomNumber1 < randomNumber2) {
-  winner.textContent = "Player 2 Wins"
+  winner.textContent = "Player 2 Wins! 🏆" +String.fromCodePoint( 0x1F3C2)
 } else {
-  winner.textContent = "Tie"
+  winner.textContent = "Tie" +String.fromCodePoint( 0x1F611)
 }
 
 
