@@ -53,10 +53,26 @@ if (randomNumber1 > randomNumber2) {
 } else if (randomNumber1 < randomNumber2) {
   winner.innerHTML = "<i>Player 2 Wins!</i> 🏆" +String.fromCodePoint( 0x1F3C2)
 } else {
-  winner.innerHTML = "<i>Tie</i> "  +String.fromCodePoint( 0x1F611)
+  winner.innerHTML = "<i>Draw</i> "  +String.fromCodePoint( 0x1F611)
 }
 
 
 function refresh() {
   window.location.reload();
 }
+
+
+
+
+ // 1. Instead of using document.getElementById('myImage_2').src = "inverted-dice-1.png"
+// we could have used set a varilable as --> var image1 = document.querySelectorAll("img")[0];
+// Then to change the varilable we could done the following
+// image.setAttribute("src","the_ref_to_the_dice's_image_that_changes_based_on_the_random_#" ).
+// The first input in setAttribute is the bit you want to change and the second input is what it should change too
+// querySelectorAll("img")[0] this will look at all the image tags and put them in the form of a list.
+// Therefore [0] is the first image tag. I prefer to use the getElementByID method
+
+// 2. In javascript we can concatenate anything
+// For example var randomImgSource = "imag e/dice" + (Math.floor(Math.random() * (6 - 0) + 1)) +".png"
+// This will produce something like --> "image/dice3.png", assuming the random # is equal to 3. This means we can just refer to an image-
+// -in a folder using concatenation
