@@ -39,17 +39,21 @@ if (randomNumber2 === 6) {
 
 var winner = document.getElementById("winner_section");
 
-//
+// TheCodePoint
 // To add an emoji you can paste the emoji directly or use the String.fromCodePoint method. This method takes a codepoint value as its argument
 // If the code point in HTML and CSS is U+ then for JS you replace it with U+
+//
+// InnerHTML vs textContent
+// innerHTML considers the html tags and looks at the code between the html tags
+// innerHTML does not consider the html tags and treat everything between the qutoation marks a string
 
 
 if (randomNumber1 > randomNumber2) {
-  winner.textContent = "Player 1 Wins!" +String.fromCodePoint( 0x1F3C6) +String.fromCodePoint( 0x26F7)
+  winner.innerHTML = "<i>Player 1 Wins!</i> " +String.fromCodePoint( 0x1F3C6) +String.fromCodePoint( 0x26F7)
 } else if (randomNumber1 < randomNumber2) {
-  winner.textContent = "Player 2 Wins! 🏆" +String.fromCodePoint( 0x1F3C2)
+  winner.innerHTML = "<i>Player 2 Wins!</i> 🏆" +String.fromCodePoint( 0x1F3C2)
 } else {
-  winner.textContent = "Tie" +String.fromCodePoint( 0x1F611)
+  winner.innerHTML = "<i>Tie</i> "  +String.fromCodePoint( 0x1F611)
 }
 
 
